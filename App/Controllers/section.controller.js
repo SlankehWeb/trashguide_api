@@ -111,7 +111,8 @@ class SectionController {
 				const result = await Sections.findOne({
 					attributes: [
 						'id', 
-						'title', 
+						'title',
+						'filename', 
 						'description', 
 						'color', 
 						[Sequelize.fn(
